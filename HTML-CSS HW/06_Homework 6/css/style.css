@@ -1,0 +1,642 @@
+* {
+  font-family: 'Lucida Sans Unicode', 'Open Sans';
+}
+
+body {
+  background-color: #fff;
+}
+
+.wrapper {
+  width: 910px;
+  height: 1310px;
+  position: relative;
+  margin: 0 auto 0 auto;
+  background-color: #fff;
+}
+
+header {
+  height: 27px;
+  display: inline-block;
+  margin: 18px 0 7px 0;
+}
+
+#phone {
+  width: 290px;
+  float: left;
+  margin: 0 17px 0 6px;
+  font-family: Arial, 'Open sans';
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #5e696d;
+}
+
+form {
+  width: 495px;
+  float: left;
+  font-size: 12px;
+  line-height: 25px;
+  border-radius: 4px;
+  background: url('../img/color.png');
+}
+
+form img {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+input {
+  width: 113px;
+  height: 14px;
+  margin-right: 6px;
+  border: none;
+  font-size: 11px;
+  text-indent: 4px;
+  color: #97a2a6;
+}
+
+.hmm {
+  width: 75px;
+  height: 19px;
+  float: left;
+  margin: 2px 0 0 17px;
+  border-radius: 15px;
+  border: 1px solid #c1c8cb;
+  background-color: #fff;
+}
+
+.hmm > img {
+margin: 0 0 3px 6px;
+}
+
+.authbuttons {
+  float: right;
+  font-size: 11px;
+  color: #fff;
+}
+
+.authbuttons a {
+  margin: 0 4px 0 4px;
+  font-size: 11px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.authbuttons a:last-child {
+  margin: 0 10px 0 10px;
+  text-decoration: underline;
+  color: #bfbfbf;
+}
+
+figure {
+  margin: 0;
+}
+
+nav {
+  width: 910px;
+  height: 32px;
+  border: 1px solid #2c345a;
+  border-radius: 3px;
+  background: url('../img/menubg.png') repeat-x;
+}
+
+nav ul {
+  display: inline-block;
+  margin: 0;
+}
+
+.topmenu {
+  margin-left: 126px;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #b1bcc0;
+}
+
+.topmenu li {
+  display: inline-block;
+  padding: 0 13px 0 13px;
+  line-height: 32px;
+}
+
+.topmenu li:hover {
+  height: 26px;
+  display: inline-block;
+  margin: 3px 0 3px 0;
+  border-radius: 10px;
+  line-height: 26px;
+  color: #fff;
+  background-color: #13486b;
+}
+
+.cart {
+  font-size: 11px;
+  list-style: none;
+}
+
+.cart li {
+  display: inline-block;
+  color: #b1bcc0;
+}
+
+.cart li:nth-child(even) {
+  margin-right: 14px;
+  color: #0d5a8f;
+}
+
+.cart li:last-child {
+  margin-left: 11px;
+}
+
+.korzeena {
+  vertical-align: middle;
+}
+
+
+/* ПАНЕЛЬ ПОИСКА */
+
+.search-section {
+  width: inherit;
+  height: 133px;
+  margin: 12px 0 16px 0;
+}
+
+.autosearch {
+  width: 412px;
+  height: 132px;
+  position: relative;
+  float: left;
+  margin-left: 5px;
+  border-radius: 15px;
+  border: 1px solid #b3b3b4;
+  background: #fff;
+  box-shadow: 1px 2px 2px 1px rgba(165, 165, 165, 1);
+}
+
+.search-wrapper {
+  width: 205px;
+  float: left;
+}
+
+.autosearch-head p {
+  float: left;
+  justify-content: center;
+  margin: 0 20px 7px 20px;
+  font-family: 'Arial black', 'Open sans';
+  font-size: 10px;
+  font-weight: bold;
+  color: #154468;
+}
+
+.autosearch-head p:first-child {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.autosearch-head p:nth-child(2) {
+  margin: 0 54px 0 44px;
+  font-size: 12px;
+}
+
+.tiresearch {
+  width: 191px;
+  height: 132px;
+  float: left;
+  margin-left: 14px;
+  border-radius: 15px;
+  border: 1px solid #b3b3b4;
+  background: #fff;
+  box-shadow: 1px 2px 2px 1px rgba(165, 165, 165, 1);
+}
+
+.rimsearch {
+  width: 266px;
+  height: 132px;
+  float: left;
+  margin-left: 9px;
+  border-radius: 15px;
+  border: 1px solid #b3b3b4;
+  background: #fff;
+  box-shadow: 1px 2px 2px 1px rgba(165, 165, 165, 1);
+}
+
+.search {
+  height: 16px;
+  display: block;
+  margin-bottom: 7px;
+  font-size: 11px;
+}
+
+.firstw {
+  display: block;
+  margin-top: 5px;
+  font-family: Arial, 'Open sans';
+  font-size: 10px;
+  color: #000;
+}
+
+.secondw {
+  font-family: Arial, 'Open sans';
+  font-size: 8px;
+  color: #77858b;
+}
+
+.filter {
+  width: 75px;
+  height: 85px;
+  display: block;
+  float: left;
+  margin-left: 16px;
+}
+
+select option {
+  font-family: Arial, 'Open sans';
+  font-size: 10px;
+}
+
+.search-button {
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  right: 19px;
+  font-family: Arial, 'Open sans';
+  font-size: 14px;
+  font-style: italic;
+  text-decoration: underline;
+  color: #154467;
+}
+
+.rimsearch {
+  position: relative;
+}
+
+.tiresearch {
+  position: relative;
+}
+
+.tiresearch-head p {
+  margin: 0 50px 5px 10px;
+  font-family: 'Arial black', 'Open sans';
+  font-size: 12px;
+  font-weight: bold;
+  color: #154468;
+}
+
+.tiresearch label input {
+  width: 7px;
+  height: 7px;
+  margin: 0 1px 0 1px;
+  vertical-align: middle;
+}
+
+.filter-middle {
+  width: 40px;
+  height: 85px;
+  display: block;
+  float: left;
+  margin-left: 14px;
+  line-height: 17px;
+  text-align: right;
+}
+
+.tirewrapper {
+  width: 120px;
+  height: 17px;
+  margin: 0 0 10px 58px;
+}
+
+.tirewrapper select {
+  display: inline-block;
+}
+
+.tirewrapper span {
+  font-size: 14px;
+}
+
+.tiresearch > label {
+  margin-left: 58px;
+}
+
+
+.tiresearch > select {
+  margin-left: 58px;
+}
+
+.tiresearch label {
+  line-height: 1;
+  color: #000;
+}
+
+.rimsearch > .tiresearch-head {
+  width: 155px;
+}
+
+.filter-right {
+  width: 70px;
+  float: left;
+  margin-left: 15px;
+}
+
+.filter-right > span {
+  display: block;
+}
+
+.filter-right > span span {
+  display: block;
+  line-height: 1;
+}
+
+.filter-right > span:first-child span {
+  display: inline;
+  line-height: normal;
+}
+
+.search-wrapper-3 {
+  width: 60px;
+  display: block;
+  float: left;
+  margin-left: 6px;
+}
+
+.search-wrapper-3 select:nth-child(odd) {
+  width: 57px;
+  margin-bottom: 15px;
+}
+
+.search-wrapper-3 select:nth-child(even) {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.search-wrapper-4 {
+  width: 65px;
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 17px;
+  padding-left: 10px;
+  border-left: 1px solid #bdc6ca;
+}
+
+.search-wrapper-4 > .firstw {
+  margin-top: 0;
+}
+
+.search-wrapper-4 > span span {
+  display: block;
+}
+
+.search-wrapper-4 > select {
+  width: 56px;
+}
+
+    /* ОСНОВНАЯ ЧАСТЬ */
+
+aside {
+  float: left;
+}
+
+.catalog {
+  margin-right: 10px;
+}
+
+.brands {
+  float: right;
+}
+
+.brands ul {
+  padding: 0;
+  margin: 12px 0 5px 15px;
+}
+
+main {
+  width: 526px;
+  height: 627px;
+  float: left;
+  border-radius: 3px;
+  background-color: blue;
+}
+
+.desc {
+  width: 180px;
+  height: 25px;
+  float: left;
+  margin-top: 4px;
+  padding: 0;
+  border-radius: 15px;
+  border: 1px solid #8b979c;
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #114165;
+  background-color: #fff;
+}
+
+.catalog ul {
+  padding: 0;
+  margin: 0;
+}
+
+.iconbg {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 2px 5px 2px 3px;
+  border-radius: 100%;
+  text-align: center;
+  background-color: #124367;
+}
+
+.topic {
+  width: 148px;
+  height: 26px;
+  margin-left: 2px;
+  border-radius: 15px;
+  border: 1px solid #8b979c;
+  font-size: 14px;
+  line-height: 25px;
+  text-transform: uppercase;
+  list-style: none;
+  color: #114165;
+  background-color: #fff;
+  clear: both;
+}
+
+.right {
+  width: 134px;
+  margin-left: 0;
+}
+
+.o {
+  display: block;
+  height: 12px;
+  width: 12px;
+  float: left;
+  margin: 2px 5px 2px 3px;
+  border-radius: 100%;
+  border: 5px solid #114165;
+}
+
+.subtopic li {
+  margin-left: 36px;
+  font-size: 13px;
+  line-height: 25px;
+  color: #465961;
+}
+
+.topic + li {
+  list-style: none;
+}
+
+.subtopic li:hover {
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+}
+
+main {
+  background: linear-gradient(to top, #93a7b0, #e4e7e8);
+}
+
+main ul {
+  margin: 14px 0 0 0;
+  padding: 0;
+}
+
+main li {
+  float: left;
+  list-style: none;
+  margin-right: 7px;
+  margin-left: 22px;
+}
+
+li +
+h3,
+h4,
+h5 {
+  margin: 0;
+  text-align: center;
+}
+
+h4 {
+  font-size: 15px;
+  color: #206988;
+}
+
+h5 {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.price {
+  margin: 2px 0 18px 0;
+  font-family: Arial, 'Open sans';
+  font-size: 16px;
+  font-style: italic;
+  text-indent: 38px;
+  font-weight: bold;
+  color: #114165;
+}
+
+.mid {
+    margin: 2px 0 22px 0;
+}
+
+.tirecontainer {
+  width: 136px;
+  height: 126px;
+  border-radius: 5px;
+  border: 1px solid #b4bcbf;
+  text-align: center;
+  background-color: #fff;
+}
+
+.tirecontainer > img {
+  margin-top: 5px;
+}
+
+#disk1,
+#disk2,
+#disk3,
+#tire1,
+#tire2,
+#tire3 {
+  width: 7px;
+  height: 7px;
+  position: relative;
+  margin: 0 15px 0 25px;
+  border: inset 2px #1c4360; /*не работает, почему?*/
+  vertical-align: middle;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  line-height: 24px;
+  color: #465961;
+}
+
+button {
+  width: 80px;
+  height: 24px;
+  margin: 17px 0 0 22px;
+  border: none;
+  border-radius: 15px;
+  font-family: Arial, 'Open sans';
+  font-size: 11px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #1f6585;
+  box-shadow: 1px 2px 2px 1px rgba(213, 213, 213, 1);
+}
+
+.logos {
+  bottom: 125px;
+  position: absolute;
+  width: inherit;
+  text-align: center;
+  clear: both;
+}
+
+.logos > img {
+  margin-right: 12px;
+}
+
+                    /* FOOTER */
+
+footer {
+  height: 99px;
+  width: inherit;
+  position: absolute;
+  bottom: 0;
+  border: 1px solid #242c3e;
+  text-align: center;
+  background-color: #213a4d;
+}
+
+.bottom-nav {
+  margin: 5px auto 13px;
+  padding: 0;
+}
+
+.bottom-nav > li {
+  display: inline-block;
+  margin-right: 8px;
+  font-family: Arial, 'Open sans';
+  font-size: 12px;
+  color: #bec6c9;
+}
+
+.bottom-nav > li:hover {
+  color: #52abcb;
+}
+
+.copyright {
+  font-family: Arial, 'Open sans';
+  font-size: 10px;
+  color: #7f4740;
+}

@@ -1,0 +1,32 @@
+table {
+  border: none;
+  border-collapse: collapse;
+}
+
+td {
+  border: 9px solid black;
+  border-collapse: collapse;
+  width: 14%;
+  height: 13%;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.black {
+  background-color: black;
+}
+
+.invisible {
+  display: none;
+  border: none;
+}
