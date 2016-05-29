@@ -1,13 +1,11 @@
 @import 'fonts.css';
-@import 'mediaQueries/main.css';
 
 * {
     font-family: 'Open sans', 'League Gothic Regular';
-    list-style: none;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 2.5em;
     line-height: 50px;
     font-weight: normal;
     color: #fff;
@@ -19,6 +17,8 @@ h3 {
     font-weight: normal;
     color: #edbfff;
     text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+    height: 1.4em;
+    overflow: hidden;
 }
 
 h4 {
@@ -32,6 +32,7 @@ p {
     color: #fff;
     font-weight: lighter;
     line-height: 1.5;
+    word-wrap: break-word; /*НЕ РАБОТАЕТ, блин*/
     hyphens: auto;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -62,7 +63,7 @@ header {
     float: left;
     font-size: 48px;
     line-height: 40px;
-    margin-bottom: 38px;
+    margin-bottom: 28px;
     margin-right: 52px;
     text-transform: uppercase;
     color: #fff;
@@ -335,6 +336,7 @@ footer {
     color: #454545;
 }
 
+
 .recent-news,
 .category,
 .blog-updates {
@@ -384,12 +386,19 @@ footer {
 
 .feedback-box_1,
 .feedback-box_2,
-.feedback-box_3 {
+.feedback-box_3,
+.feedback-box_4,
+.feedback-box_5 {
     width: 29%;
     height: 202px;
     display: inline-block;
     margin: 100px auto;
     overflow: hidden;
+}
+
+.feedback-box_4,
+.feedback-box_5 {
+  display: none;
 }
 
 .feedback-box_2 {
@@ -451,19 +460,68 @@ footer {
     text-shadow: 0 2px 2px rgba(0, 0, 0, .4);
 }
 
+
+@import 'mediaQueries/main.css';
+
 /*ПОКА НАЧИНАЮ ПОДКЛЮЧАТЬ МЕДИА ЗАПРОСЫ СЮДА*/
+/*ДЛЯ ШИРИНЫ ЭКРАНА 768 пикселей*/
 
 @media screen and (min-width: 768px) and (max-width: 959px) {
 
-.container {
-    width: 768px;
+    .container {
+        width: 768px;
+    }
+
+    footer {
+        height: 202px;
+    }
+
+    h1 {
+        color: blue;
+    }
+
+    .carousel-slide,
+    .carousel-slide-inner {
+        top: 242px;
+    }
+
+    .article {
+        width: 35%;
+        height: 182px;
+        float: left;
+        margin-top: 100px;
+        text-align: left;
+        margin-left: 24px;
+        overflow: hidden;
+    }
+
+    .section-1 {
+        height: 800px;
+    }
+
+    .feedback-box_1,
+    .feedback-box_2 {
+        display: none;
+    }
+
+    .feedback-box_4,
+    .feedback-box_5 {
+        display: inline-block;
+        margin-left: 6%;
+    }
+
 }
 
-footer {
-    height: 202px;
+/*ДЛЯ ШИРИНЫ ЭКРАНА 480 пикселей*/
 
-h1 {
-    color: blue;
-}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+    .container {
+        width: 480px;
+    }
+
+    h1 {
+        color: green;
+    }
 
 }
