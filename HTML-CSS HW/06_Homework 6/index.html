@@ -8,43 +8,46 @@
 
   <body>
     <div class="wrapper">
-      <header><h3 id="phone"><div class="iconbg">
-      <img class="icon" src="img/handset.png" alt=""/></div>(044)123-45-67 (044)567-89-10</h3>
-        <form class="authorization">
-          <img src="img/authorization.png" alt=""/>
+      <div class="header">
+        <h3 id="phone">
+          <div class="iconPhone"></div>(044)123-45-67 (044)567-89-10</h3>
+        <form action="" class="authorization">
+          <div class="mysteryShopper"></div>
           <input type="text" name="login" value="" placeholder="логин">
           <input type="password" name="password" value="" placeholder="пароль">
             <div class="authbuttons">
-              <a href="#">вход</a>|<a href="#">регистрация</a>
-              <a href="#">забыли пароль?</a>
+
+              <input type="button" class="enter" value="вход">|<input type="button" class="reg" value="регистрация">
+              <input type="button" class="forgot" value="забыли пароль?">
             </div>
         </form>
 
         <div class="hmm">
-          <img src="img/home.png" alt=""/>
-          <img src="img/sitemap.png" alt=""/>
-          <img src="img/mail.png" alt=""/>
+          <div class="home"></div>
+          <div class="sitemap"></div>
+          <div class="mail"></div>
         </div>
-      </header>
+      </div>
 
-    <figure><img src="img/blick.png" alt="coolpic"/></figure>
+    <div class="poster"></div>
 
-    <nav>
+    <div class="nav">
       <ul class="topmenu">
-        <li>о компани</li>
-        <li>оплата</li>
-        <li>доставка</li>
-        <li>статьи</li>
-        <li>контакты</li>
+        <li><a href="">о компани</a></li>
+        <li><a href="">оплата</a></li>
+        <li><a href="">доставка</a></li>
+        <li><a href="">статьи</a></li>
+        <li><a href="">контакты</a></li>
       </ul>
 
       <ul class="cart">
-        <li><img class="korzeena" src="img/cart.png" alt=""/>товаров:</li>
+        <li class="zzz"></li>
+        <li>товаров:</li>
         <li>0</li>
         <li>на сумму:</li>
         <li>0,00 грн.</li>
       </ul>
-    </nav>
+    </div>
 
       <!-- ПАНЕЛЬ ПОИСКА -->
 
@@ -191,10 +194,11 @@
           <option>17</option>
         </select>
 
-        <label for="summer"><input type="checkbox" id="summer">лето</label>
-        <label for="winter"><input type="checkbox" id="winter">зима</label>
-        <label for="allseasons"><input type="checkbox" id="allseasons">всесез</label>
-
+        <form action="" class="tireSeason">
+          <label for="summer"><input type="checkbox" id="summer">лето</label>
+          <label for="winter"><input type="checkbox" id="winter">зима</label>
+          <label for="allseasons"><input type="checkbox" id="allseasons">всесез</label>
+        </form>
         <span class="search-button">поиск...</span>
       </div>
 
@@ -267,18 +271,17 @@
       </div>
     </div>
 
-    <aside class="catalog">
+    <div class="catalog">
       <h3 class="desc">
-        <div class="iconbg">
-          <img class="icon" src="img/catalog.png" alt=""/></div>каталог продукции</h3>
+        <div class="iconCatalog"></div>каталог продукции</h3>
         <ul>
           <li class="topic"><span class="o"></span>шины</li>
           <li>
             <ul class ="subtopic">
-              <li>Наименование 1</li>
-              <li>Наименование 2</li>
-              <li>Наименование 3</li>
-              <li>Наименование 4</li>
+              <li><a href="#">Наименование 1</a></li>
+              <li><a href="#">Наименование 2</a></li>
+              <li><a href="#">Наименование 3</a></li>
+              <li><a href="#">Наименование 4</a></li>
             </ul>
           </li>
         </ul>
@@ -287,10 +290,10 @@
           <li class="topic"><span class="o"></span>диски</li>
           <li>
             <ul class ="subtopic">
-              <li>Наименование 1</li>
-              <li>Наименование 2</li>
-              <li>Наименование 3</li>
-              <li>Наименование 4</li>
+              <li><a href="#">Наименование 1</a></li>
+              <li><a href="#">Наименование 2</a></li>
+              <li><a href="#">Наименование 3</a></li>
+              <li><a href="#">Наименование 4</a></li>
             </ul>
           </li>
         </ul>
@@ -299,107 +302,112 @@
           <li class="topic"><span class="o"></span>болты</li>
           <li>
             <ul class ="subtopic">
-              <li>Наименование 1</li>
-              <li>Наименование 2</li>
-              <li>Наименование 3</li>
-              <li>Наименование 4</li>
+              <li><a href="#">Наименование 1</a></li>
+              <li><a href="#">Наименование 2</a></li>
+              <li><a href="#">Наименование 3</a></li>
+              <li><a href="#">Наименование 4</a></li>
             </ul>
           </li>
         </ul>
-    </aside>
+    </div>
 
-    <main>
+    <div class="main">
       <ul>
         <li>
           <h4>Goodyear</h4>
           <h5>Ultra Grip Extreme</h5>
-          <div class="tirecontainer"><img src="img/tire1x1.png" alt="шинка1"/></div>
+          <div class="tirecontainer"><a class="tire1x1"></a></div>
           <h3 class="price">90,00 грн.</h3>
         </li>
 
         <li>
           <h4>Nokian</h4>
           <h5>Hakkapeliitta R</h5>
-          <div class="tirecontainer"><img src="img/tire1x2.png" alt="шинка2"/></div>
+          <div class="tirecontainer"><a class="tire1x2"></a></div>
           <h3 class="price">115,00 грн.</h3>
         </li>
 
         <li>
           <h4>Hankook</h4>
           <h5>K 708 155/65 R14</h5>
-          <div class="tirecontainer"><img src="img/tire1x3.png" alt="шинка3"/></div>
+          <div class="tirecontainer"><a class="tire1x3"></a></div>
           <h3 class="price">393,00 грн.</h3>
         </li>
 
         <li>
           <h4>Goodyear</h4>
           <h5>Ultra Grip Extreme</h5>
-          <div class="tirecontainer"><img src="img/tire1x1.png" alt="шинка1"/></div>
+          <div class="tirecontainer"><a class="tire1x1"></a></div>
           <h3 class="price mid">90,00 грн.</h3>
         </li>
 
         <li>
           <h4>Nokian</h4>
           <h5>Hakkapeliitta R</h5>
-          <div class="tirecontainer"><img src="img/tire1x2.png" alt="шинка2"/></div>
+          <div class="tirecontainer"><a class="tire1x2"></a></div>
           <h3 class="price mid">115,00 грн.</h3>
         </li>
 
         <li>
           <h4>Hankook</h4>
           <h5>K 708 155/65 R14</h5>
-          <div class="tirecontainer"><img src="img/tire1x3.png" alt="шинка3"/></div>
+          <div class="tirecontainer"><a class="tire1x3"></a></div>
           <h3 class="price mid">393,00 грн.</h3>
         </li>
 
         <li>
           <h4>Goodyear</h4>
           <h5>Ultra Grip Extreme</h5>
-          <div class="tirecontainer"><img src="img/tire1x1.png" alt="шинка1"/></div>
+          <div class="tirecontainer"><a class="tire1x1"></a></div>
           <h3 class="price">90,00 грн.</h3>
         </li>
 
         <li>
           <h4>Nokian</h4>
           <h5>Hakkapeliitta R</h5>
-          <div class="tirecontainer"><img src="img/tire1x2.png" alt="шинка2"/></div>
+          <div class="tirecontainer"><a class="tire1x2"></a></div>
           <h3 class="price">115,00 грн.</h3>
         </li>
 
         <li>
           <h4>Hankook</h4>
           <h5>K 708 155/65 R14</h5>
-          <div class="tirecontainer"><img src="img/tire1x3.png" alt="шинка3"/></div>
+          <div class="tirecontainer"><a class="tire1x3"></a></div>
           <h3 class="price">393,00 грн.</h3>
         </li>
 
       </ul>
 
-    </main>
+    </div>
 
-    <aside class="brands">
+    <div class="brands">
       <h3 class="desc">
-        <div class="iconbg">
-          <img class="icon" src="img/brands.png" alt=""/></div>бренды</h3>
+        <div class="iconBrands"></div>бренды</h3>
       <ul>
         <li class="topic right"><div class="o"></div>шины</li>
       </ul>
 
-      <label for="tire1"><input type="checkbox" id="tire1">Бренд 1</label>
-      <label for="tire2"><input type="checkbox" id="tire2">Бренд 2</label>
-      <label for="tire3"><input type="checkbox" id="tire3">Бренд 3</label>
+      <form action="" class="tireForm">
+        <label for="tire1"><input type="checkbox" id="tire1">Бренд 1</label>
+        <label for="tire2"><input type="checkbox" id="tire2">Бренд 2</label>
+        <label for="tire3"><input type="checkbox" id="tire3">Бренд 3</label>
+      </form>
 
       <ul>
         <li class="topic right"><div class="o"></div>диски</li>
       </ul>
 
-      <label for="disk1"><input type="checkbox" id="disk1">Бренд 1</label>
-      <label for="disk2"><input type="checkbox" id="disk2">Бренд 2</label>
-      <label for="disk3"><input type="checkbox" id="disk3">Бренд 3</label>
+      <form action="" class="diskForm">
+        <label for="disk1"><input type="checkbox" id="disk1">Бренд 1</label>
+        <label for="disk2"><input type="checkbox" id="disk2">Бренд 2</label>
+        <label for="disk3"><input type="checkbox" id="disk3">Бренд 3</label>
 
-      <button>выбрать</button>
+        <input type="button" class="btn" value="выбрать" />
+      </form>
 
-    </aside>
+    </div>
+
+    <div class="clearfix"></div>
 
     <div class="logos">
       <img src="img/brand1.png" alt=""/>
@@ -412,19 +420,19 @@
       <img src="img/brand8.png" alt=""/>
     </div>
 
-    <footer>
+    <div class="footer">
       <ul class="bottom-nav">
-        <li>О компании</li>
+        <li><a href="#">О компании</a></li>
         <li>|</li>
-        <li>Доставка</li>
+        <li><a href="#">Доставка</a></li>
         <li>|</li>
-        <li>Статьи</li>
+        <li><a href="#">Статьи</a></li>
         <li>|</li>
-        <li>Контакты</li>
+        <li><a href="#">Контакты</a></li>
       </ul>
 
       <div class="copyright">Copyright (c) 2016 Copyright Holder All Rights Reserved.</div>
-    </footer>
+    </div>
 
   </div>
 

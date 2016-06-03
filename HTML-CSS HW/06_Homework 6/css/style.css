@@ -14,7 +14,7 @@ body {
   background-color: #fff;
 }
 
-header {
+.header {
   height: 27px;
   display: inline-block;
   margin: 18px 0 7px 0;
@@ -31,13 +31,22 @@ header {
   color: #5e696d;
 }
 
-form {
-  width: 495px;
+.authorization {
+  padding-left: 7px;
   float: left;
   font-size: 12px;
   line-height: 25px;
   border-radius: 4px;
-  background: url('../img/color.png');
+  background: linear-gradient(to top, #0c3357, #1f6787);
+}
+
+.mysteryShopper {
+  width: 14px;
+  height: 18px;
+  float: left;
+  margin-top: 5px;
+  margin-right: 3px;
+  background: url('../img/authorization.png') no-repeat center;
 }
 
 form img {
@@ -48,12 +57,17 @@ form img {
 input {
   width: 113px;
   height: 14px;
-  margin-right: 5px;
   border: none;
   font-size: 11px;
   text-indent: 4px;
   color: #97a2a6;
 }
+
+/*.authorization {
+  background: url('../img/authorization.png') no-repeat 8px;
+  background-color: #13486b;
+  padding-left: 28px;
+}*/
 
 .hmm {
   width: 75px;
@@ -65,13 +79,50 @@ input {
   background-color: #fff;
 }
 
-.hmm > img {
-margin: 0 0 3px 6px;
+.home,
+.sitemap,
+.mail {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin: 0 0 3px 6px;
 }
+
+.home {
+  background: url('../img/home.png') no-repeat center;
+}
+
+.sitemap {
+  background: url('../img/sitemap.png') no-repeat center;
+}
+
+.mail {
+  background: url('../img/mail.png') no-repeat center;
+}
+
+.enter,
+.reg,
+.forgot {
+  overflow: visible;
+  text-align: center;
+  text-decoration: underline;
+  border-radius: 0;
+  border-color: transparent;
+  background-color: transparent;
+  color: #fff;
+}
+
+.enter {
+  width: 39px;
+}
+
+.reg {
+  width: 80px;
+}
+
 
 .authbuttons {
   float: right;
-  font-size: 11px;
   color: #fff;
 }
 
@@ -88,11 +139,13 @@ margin: 0 0 3px 6px;
   color: #bfbfbf;
 }
 
-figure {
-  margin: 0;
+.poster {
+  height: 237px;
+  background: url('../img/blick.png') no-repeat;
+  margin: 0 0 6px 0;
 }
 
-nav {
+.nav {
   width: 910px;
   height: 32px;
   border: 1px solid #2c345a;
@@ -100,18 +153,15 @@ nav {
   background: url('../img/menubg.png') repeat-x;
 }
 
-nav ul {
+.nav ul {
   display: inline-block;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .topmenu {
   margin-left: 126px;
   padding: 0;
-  list-style: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #b1bcc0;
 }
 
 .topmenu li {
@@ -120,19 +170,32 @@ nav ul {
   line-height: 32px;
 }
 
+.topmenu a {
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #b1bcc0;
+}
+
+.topmenu a:hover {
+  color: #fff;
+}
+
 .topmenu li:hover {
   height: 26px;
   display: inline-block;
   margin: 3px 0 3px 0;
   border-radius: 10px;
   line-height: 26px;
-  color: #fff;
   background-color: #13486b;
 }
 
 .cart {
   font-size: 11px;
   list-style: none;
+  padding: 0;
+  margin-left: 40px;
 }
 
 .cart li {
@@ -140,19 +203,14 @@ nav ul {
   color: #b1bcc0;
 }
 
-.cart li:nth-child(even) {
-  margin-right: 14px;
+.cart li:nth-child(odd) {
+  margin-right: 4px;
   color: #0d5a8f;
 }
 
-.cart li:last-child {
-  margin-left: 11px;
+.zzz::before {
+  content: url('../img/cart.png'); /*запарился с корзиной*/
 }
-
-.korzeena {
-  vertical-align: middle;
-}
-
 
 /* ПАНЕЛЬ ПОИСКА */
 
@@ -393,12 +451,9 @@ select option {
 
     /* ОСНОВНАЯ ЧАСТЬ */
 
-aside {
-  float: left;
-}
-
 .catalog {
   margin-right: 10px;
+    float: left;
 }
 
 .brands {
@@ -410,12 +465,12 @@ aside {
   margin: 12px 0 5px 15px;
 }
 
-main {
+.main {
   width: 526px;
   height: 627px;
   float: left;
   border-radius: 3px;
-  background-color: blue;
+  background: linear-gradient(to top, #93a7b0, #e4e7e8);
 }
 
 .desc {
@@ -439,13 +494,26 @@ main {
   margin: 0;
 }
 
-.iconbg {
+.iconPhone {
   width: 20px;
   height: 20px;
   float: left;
   margin: 2px 5px 2px 3px;
   border-radius: 100%;
   text-align: center;
+  background: url('../img/handset.png') no-repeat center;
+  background-color: #124367;
+}
+
+.iconCatalog,
+.iconBrands {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 2px 5px 2px 3px;
+  border-radius: 100%;
+  text-align: center;
+  background: url('../img/catalog.png') no-repeat center;
   background-color: #124367;
 }
 
@@ -482,7 +550,11 @@ main {
 .subtopic li {
   margin-left: 36px;
   font-size: 13px;
-  line-height: 25px;
+  line-height: 26px;
+}
+
+.subtopic a {
+  text-decoration: none;
   color: #465961;
 }
 
@@ -490,22 +562,20 @@ main {
   list-style: none;
 }
 
-.subtopic li:hover {
+.subtopic a:hover {
+  font-size: 14px;
   text-decoration: underline;
   font-style: italic;
   font-weight: bold;
+  color: #0c3256;
 }
 
-main {
-  background: linear-gradient(to top, #93a7b0, #e4e7e8);
-}
-
-main ul {
+.main ul {
   margin: 14px 0 0 0;
   padding: 0;
 }
 
-main li {
+.main li {
   float: left;
   list-style: none;
   margin-right: 7px;
@@ -553,9 +623,24 @@ h5 {
   background-color: #fff;
 }
 
-.tirecontainer > img {
-  margin-top: 5px;
+.tire1x1 {
+  background: url('../img/tire1x1.png') no-repeat center;
+  display: block;
+  height: 100%;
 }
+
+.tire1x2 {
+  background: url('../img/tire1x2.png') no-repeat center;
+  display: block;
+  height: 100%;
+}
+
+.tire1x3 {
+  background: url('../img/tire1x3.png') no-repeat center;
+  display: block;
+  height: 100%;
+}
+
 
 #disk1,
 #disk2,
@@ -563,11 +648,9 @@ h5 {
 #tire1,
 #tire2,
 #tire3 {
-  width: 7px;
-  height: 7px;
-  position: relative;
+  width: 11px;
+  height: 11px;
   margin: 0 15px 0 25px;
-  border: inset 2px #1c4360; /*не работает, почему?*/
   vertical-align: middle;
 }
 
@@ -578,7 +661,7 @@ label {
   color: #465961;
 }
 
-button {
+.btn {
   width: 80px;
   height: 24px;
   margin: 17px 0 0 22px;
@@ -594,12 +677,13 @@ button {
   box-shadow: 1px 2px 2px 1px rgba(213, 213, 213, 1);
 }
 
-.logos {
-  bottom: 125px;
-  position: absolute;
-  width: inherit;
-  text-align: center;
+.clearfix {
   clear: both;
+}
+
+.logos {
+  margin: 42px auto 25px;
+  text-align: center;
 }
 
 .logos > img {
@@ -608,11 +692,9 @@ button {
 
                     /* FOOTER */
 
-footer {
+.footer {
   height: 99px;
   width: inherit;
-  position: absolute;
-  bottom: 0;
   border: 1px solid #242c3e;
   text-align: center;
   background-color: #213a4d;
@@ -626,13 +708,19 @@ footer {
 .bottom-nav > li {
   display: inline-block;
   margin-right: 8px;
-  font-family: Arial, 'Open sans';
-  font-size: 12px;
   color: #bec6c9;
 }
 
-.bottom-nav > li:hover {
+.bottom-nav a {
+  font-family: Arial, 'Open sans';
+  font-size: 12px;
+  text-decoration: none;
+  color: #bec6c9;
+}
+
+.bottom-nav a:hover {
   color: #52abcb;
+  text-decoration: none;
 }
 
 .copyright {
