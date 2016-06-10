@@ -31,27 +31,22 @@ body {
   color: #5e696d;
 }
 
+.authorization::before {
+  content: ' ';
+  width: 14px;
+  height: 18px;
+  float: left;
+  margin: 4px 4px 0 8px;
+  line-height: 25px;
+  background: url('../img/authorization.png');
+}
+
 .authorization {
-  padding-left: 7px;
   float: left;
   font-size: 12px;
   line-height: 25px;
   border-radius: 4px;
   background: linear-gradient(to top, #0c3357, #1f6787);
-}
-
-.mysteryShopper {
-  width: 14px;
-  height: 18px;
-  float: left;
-  margin-top: 5px;
-  margin-right: 3px;
-  background: url('../img/authorization.png') no-repeat center;
-}
-
-form img {
-  margin-left: 8px;
-  vertical-align: middle;
 }
 
 input {
@@ -62,12 +57,6 @@ input {
   text-indent: 4px;
   color: #97a2a6;
 }
-
-/*.authorization {
-  background: url('../img/authorization.png') no-repeat 8px;
-  background-color: #13486b;
-  padding-left: 28px;
-}*/
 
 .hmm {
   width: 75px;
@@ -203,13 +192,18 @@ input {
   color: #b1bcc0;
 }
 
-.cart li:nth-child(odd) {
+.cart li:nth-child(even) {
   margin-right: 4px;
   color: #0d5a8f;
 }
 
-.zzz::before {
-  content: url('../img/cart.png'); /*запарился с корзиной*/
+.cart::before {
+  content: '';
+  width: 21px;
+  height: 17px;
+  float: left;
+  margin-right: 7px;
+  background: url('../img/cart.png');
 }
 
 /* ПАНЕЛЬ ПОИСКА */
@@ -489,32 +483,27 @@ select option {
   background-color: #fff;
 }
 
+.desc::before {
+  content: '';
+  width: 22px;
+  height: 22px;
+  float: left;
+  margin: 2px 5px 2px 3px;
+  background: url('../img/catalog.png');
+}
+
 .catalog ul {
   padding: 0;
   margin: 0;
 }
 
-.iconPhone {
-  width: 20px;
-  height: 20px;
+#phone::before {
+  content: ' ';
+  width: 22px;
+  height: 22px;
   float: left;
   margin: 2px 5px 2px 3px;
-  border-radius: 100%;
-  text-align: center;
   background: url('../img/handset.png') no-repeat center;
-  background-color: #124367;
-}
-
-.iconCatalog,
-.iconBrands {
-  width: 20px;
-  height: 20px;
-  float: left;
-  margin: 2px 5px 2px 3px;
-  border-radius: 100%;
-  text-align: center;
-  background: url('../img/catalog.png') no-repeat center;
-  background-color: #124367;
 }
 
 .topic {
