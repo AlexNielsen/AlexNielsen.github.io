@@ -5,12 +5,13 @@
 body {
   background-image: url('../img/background.png');
   background-repeat: repeat-x;
+  background-color: #0c739f;
 }
 
 .wrapper {
   width: 1000px;
   height: 990px;
-  margin: 38px  auto 0px auto;
+  margin: 0 auto 0 auto;
   background-color: #fff;
   box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.56);
   overflow: hidden;
@@ -21,7 +22,11 @@ header {
   height: 165px;
   padding: 10px 27px 0px;
   font-size: 12px;
-  color:  #128aa7;
+  color: #128aa7;
+}
+
+header a {
+    color: #128aa7;
 }
 
 .Logo {
@@ -58,6 +63,33 @@ li {
   padding: 0 4px 0 4px;
   font-size: 10px;
   text-align: center;
+}
+
+.flag {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+  background-image: url('../img/flags.png');
+}
+
+.nepal {
+  background-position: -41px 0;
+}
+
+.tibet {
+  background-position: -82px 0;
+}
+
+.bhutan {
+  background-position: -123px 0;
+}
+
+.srilanka {
+  background-position: -164px 0;
+}
+
+.maldives {
+  background-position: -205px 0;
 }
 
 .image {
@@ -103,9 +135,10 @@ li > a {
 ul.submenu {
   display: none;
   position: absolute;
-  width: 150px;
+  width: max-content;
   left: -10px;
   padding-left: 10px;
+  padding-right: 44px;
   background-color: #343434;
   box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.56);
   z-index: 9;
