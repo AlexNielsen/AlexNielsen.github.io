@@ -6,7 +6,11 @@ body {
   background-color: #f9f9f9;
 }
 
-#wrapper {
+a {
+  text-decoration: none;
+}
+
+.wrapper {
   width: 1060px;
   background-color: #ffffff;
   margin-left: auto;;
@@ -31,12 +35,15 @@ header {
   display: inline-block;
   line-height: 40px;
   padding: 0 24px 0 24px;
-  font-size: 15px;
-  color: #ffffff;
-  text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.5);
-  font-weight: 100;
   border-right: 1px solid transparent;
   border-left: 1px solid transparent;
+  text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.top-bar > a {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 100;
 }
 
 .top-bar:hover {
@@ -60,6 +67,10 @@ header {
   border-top: 1px #5e5e5e solid;
   border-left: 1px #5e5e5e solid;
   border-right: 1px #5e5e5e solid;
+
+}
+
+.sidebar > a {
   color: #5e5e5e;
 }
 
@@ -109,6 +120,10 @@ footer {
   padding: 0 24px 0 24px;
   font-size: 13px;
   font-weight: bold;
+
+}
+
+.bottom-bar > a {
   color: #5e5e5e;
 }
 
