@@ -21,14 +21,24 @@ body {
 }
 
 #phone {
-  width: 290px;
+  width: 291px;
   float: left;
-  margin: 0 17px 0 6px;
+  margin: 1px 17px 0 5px;
   font-family: Arial, 'Open sans';
   font-size: 18px;
   line-height: 26px;
   font-weight: normal;
+  letter-spacing: 0.33px;
   color: #5e696d;
+}
+
+#phone::before {
+  content: ' ';
+  width: 22px;
+  height: 22px;
+  float: left;
+  margin: 2px 5px 2px 1px;
+  background: url('../img/handset.png') no-repeat center;
 }
 
 .authorization::before {
@@ -52,6 +62,7 @@ body {
 input {
   width: 113px;
   height: 14px;
+  margin-right: 2px;
   border: none;
   font-size: 11px;
   text-indent: 4px;
@@ -62,7 +73,7 @@ input {
   width: 75px;
   height: 19px;
   float: left;
-  margin: 2px 0 0 17px;
+  margin: 0px 0 0 16px;
   border-radius: 15px;
   border: 1px solid #c1c8cb;
   background-color: #fff;
@@ -74,7 +85,7 @@ input {
   width: 12px;
   height: 12px;
   display: inline-block;
-  margin: 0 0 3px 6px;
+  margin: 0 0 4px 6px;
 }
 
 .home {
@@ -103,6 +114,7 @@ input {
 
 .enter {
   width: 39px;
+  margin: -3px;
 }
 
 .reg {
@@ -116,22 +128,23 @@ input {
 }
 
 .authbuttons a {
-  margin: 0 4px 0 4px;
   font-size: 11px;
   text-decoration: none;
+  letter-spacing: -0.2px;
   color: #fff;
 }
 
 .authbuttons a:last-child {
-  margin: 0 10px 0 10px;
+  margin: 0 11px 0 16px;
   text-decoration: underline;
+  letter-spacing: 0.6px;
   color: #bfbfbf;
 }
 
 .poster {
   height: 237px;
   background: url('../img/blick.png') no-repeat;
-  margin: 0 0 6px 0;
+  margin: -5px 0 6px 0;
 }
 
 .nav {
@@ -446,7 +459,7 @@ select option {
     /* ОСНОВНАЯ ЧАСТЬ */
 
 .catalog {
-  margin-right: 10px;
+  margin-right: 9px;
     float: left;
 }
 
@@ -456,7 +469,7 @@ select option {
 
 .brands ul {
   padding: 0;
-  margin: 12px 0 5px 15px;
+  margin: 10px 0 5px 12px;
 }
 
 .main {
@@ -471,7 +484,7 @@ select option {
   width: 180px;
   height: 25px;
   float: left;
-  margin-top: 4px;
+  margin-top: 2px;
   padding: 0;
   border-radius: 15px;
   border: 1px solid #8b979c;
@@ -488,7 +501,7 @@ select option {
   width: 22px;
   height: 22px;
   float: left;
-  margin: 2px 5px 2px 3px;
+  margin: 2px 3px 2px 0px;
   background: url('../img/catalog.png');
 }
 
@@ -497,19 +510,9 @@ select option {
   margin: 0;
 }
 
-#phone::before {
-  content: ' ';
-  width: 22px;
-  height: 22px;
-  float: left;
-  margin: 2px 5px 2px 3px;
-  background: url('../img/handset.png') no-repeat center;
-}
-
 .topic {
   width: 148px;
   height: 26px;
-  margin-left: 2px;
   border-radius: 15px;
   border: 1px solid #8b979c;
   font-size: 14px;
@@ -531,20 +534,22 @@ select option {
   height: 12px;
   width: 12px;
   float: left;
-  margin: 2px 5px 2px 3px;
+  margin: 2px 3px 2px 3px;
   border-radius: 100%;
   border: 5px solid #114165;
 }
 
 .subtopic li {
-  margin-left: 36px;
+  margin-left: 52px;
   font-size: 13px;
-  line-height: 26px;
+  line-height: 25px;
 }
 
 .subtopic a {
   text-decoration: none;
   color: #465961;
+  position: absolute;
+  left: 46px;
 }
 
 .topic + li {
@@ -567,7 +572,7 @@ select option {
 .main li {
   float: left;
   list-style: none;
-  margin-right: 7px;
+  margin-right: 8px;
   margin-left: 22px;
 }
 
@@ -577,6 +582,7 @@ h4,
 h5 {
   margin: 0;
   text-align: center;
+  line-height: 15px;
 }
 
 h4 {
@@ -590,7 +596,7 @@ h5 {
 }
 
 .price {
-  margin: 2px 0 18px 0;
+  margin: 3px 0 25px 0;
   font-family: Arial, 'Open sans';
   font-size: 16px;
   font-style: italic;
@@ -600,7 +606,7 @@ h5 {
 }
 
 .mid {
-    margin: 2px 0 22px 0;
+    margin: 3px 0 25px 0;
 }
 
 .tirecontainer {
@@ -639,7 +645,7 @@ h5 {
 #tire3 {
   width: 11px;
   height: 11px;
-  margin: 0 15px 0 25px;
+  margin: 0 12px 0 23px;
   vertical-align: middle;
 }
 
@@ -671,32 +677,31 @@ label {
 }
 
 .logos {
-  margin: 42px auto 25px;
+  margin: 36px auto 19px;
   text-align: center;
 }
 
 .logos > img {
-  margin-right: 12px;
+  margin-right: 7px;
 }
 
                     /* FOOTER */
 
 .footer {
   height: 99px;
-  width: inherit;
   border: 1px solid #242c3e;
   text-align: center;
   background-color: #213a4d;
 }
 
 .bottom-nav {
-  margin: 5px auto 13px;
+  margin: 5px auto 8px;
   padding: 0;
 }
 
 .bottom-nav > li {
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 5px;
   color: #bec6c9;
 }
 
