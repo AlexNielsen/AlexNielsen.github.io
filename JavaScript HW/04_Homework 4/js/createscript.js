@@ -22,7 +22,7 @@ var test = {
 
   createAnswer: function (answer, DOM) {
     var input = document.createElement('input');
-    console.log(DOM);
+    // console.log(DOM);
     var DOMElement = document.querySelector(DOM);
     console.log(DOMElement);
     DOMElement.appendChild(input);
