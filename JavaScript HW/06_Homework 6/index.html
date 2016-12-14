@@ -3,19 +3,25 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
     <title>Timer</title>
   </head>
 
   <body>
     <wrapper>
-      <button id="start">start</button>
-      <button id="pause">pause</button>
-      <button id="stp">stop</button>
+<div class="buttons">
+        <button type="button" class="btn btn-success" id="start">start</button>
+        <button type="button" class="btn btn-info" id="pause">pause</button>
+        <button type="button" class="btn btn-danger" id="stp">stop</button>
+</div>
+
       <div id="texter"></div>
       <div id="counter"></div>
+
     </wrapper>
 
-  <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
   </body>
 </html>

@@ -4,7 +4,6 @@ stp.addEventListener('click', stopClick);
 
 
 var count = 0, timerId, go = 0;
-counter.innerHTML = "00:00:00:00";
 
 function startClick () {
   texter.innerHTML = 'startClick';
@@ -27,6 +26,16 @@ function startClick () {
 
       var str = hours+":"+min+":"+sek+":"+msek;
       counter.innerHTML = str;
+
+  //
+  // if (count > 0) {
+  //   start.innerHTML = "pause";
+  //   if start.innerHTML = "pause" {
+  //     function () {
+  //       start.innerHTML = "start";
+  //     }
+  //   }
+  // }
     }, 1);
     go = true;
   }

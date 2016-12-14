@@ -1,8 +1,22 @@
-* {
-  margin: 0;
-  padding: 0;
+wrapper {
+  display: block;
+  width: 40%;
+  height: 40%;
+  margin: 20px auto;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #e8edf3;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.js-class {
-  color: white;
+.buttons {
+  width: 100%;
+  text-align: center;
+}
+
+#counter {
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow:  0 1px 5px rgba(0, 0, 0, 0.5);
 }
