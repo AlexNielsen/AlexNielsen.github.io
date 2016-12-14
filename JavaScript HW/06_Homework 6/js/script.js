@@ -27,7 +27,7 @@ function startClick () {
 
       var str = hours+":"+min+":"+sek+":"+msek;
       counter.innerHTML = str;
-    }, 1);
+    }, 10);
     go = true;
   }
 }
