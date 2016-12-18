@@ -1,0 +1,34 @@
+.splash-container {
+  background: url('../../img/bg.jpg');
+}
+
+.splash-head {
+  color: black;
+}
+
+.l-box-lrg {
+  padding: 1em;
+}
+
+.wide {
+  width: 100%;
+  padding-left: 1em;
+}
+
+.pure-u-lg-3-5 .wide {
+  width: 100%;
+}
+
+.zebra {
+  background: white;
+  color: #34495e;
+}
+
+.pure-button-primary .button-yellow {
+background: rgb(250, 250, 0);
+background-color: rgb(250, 250, 0);
+}
+
+.clearfix {
+  clear: both;
+}
