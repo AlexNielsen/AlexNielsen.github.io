@@ -1,0 +1,15 @@
+.wrapper {
+  width: 80%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.textwrapper {
+  padding: 15px;
+}
+
+img {
+  width: 100%;
+}
